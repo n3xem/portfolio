@@ -5,14 +5,13 @@ height: 500px;
   width:500px;
 transform-origin: left top;
 transform: scale(0.5);
-/* 背景画像の調整 - START */
-background-image: url(hsttps://images-na.ssl-images-amazon.com/images/I/41W0MaBaIcL._AC_SX466_.jpg); /* 後で任意の画
-像に差し替える */
-background-size: 500px auto; /* 「幅 高さ」 */
-background-position: 50px 50px; /* 「x 座標 y 座標」 */
-background-repeat: no-repeat;
 animation: cat-container 20s ease 0s infinite alternate none running;
-/* 背景画像の調整 - END */
+}
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    .cat-container{
+        transform: scale(0.3);
+    }
 }
 
 .lower-lip, .lower-lip:before, .lower-lip:after{
@@ -303,7 +302,7 @@ animation: cat-container 20s ease 0s infinite alternate none running;
     30%{
         opacity:0;
         top:20%;
-        left:50px;
+        left:50%;
     }
     40%{
         opacity:1;
@@ -314,7 +313,7 @@ animation: cat-container 20s ease 0s infinite alternate none running;
     60%{
         opacity:0;
         top:30%;
-        left:60%;
+        left:20%;
     }
     70%{
         opacity:0;
@@ -328,6 +327,6 @@ animation: cat-container 20s ease 0s infinite alternate none running;
     100%{
         opacity: 0;
         top:60%;
-        left:90%;
+        left:50%;
     }
 }
