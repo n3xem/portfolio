@@ -57,14 +57,30 @@ body {
   text-align: center;
 }
 
-.itemization-contents ul {
+ .itemization-contents ul {
   max-width: 600px;
   margin: 0 auto;
 }
 
-.itemization-contents ul li {
+td,.itemization-contents ul li {
   font-size: 1.2rem;
   line-height: 1.5;
   padding: 0.5em 0;
   font-family: "Noto Sans JP", serif;
+}
+
+table {
+  padding:20px;
+  width:70%;
+  margin: 0 auto;
+}
+table th{
+  padding:20px;
+}
+table td{
+  padding: 3px 10px;
+}
+
+table th, table td{
+  border: dashed 1px orange;
 }
